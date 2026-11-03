@@ -98,6 +98,15 @@
     top: 6%;
     left: 14%;
 
+    /* Mirror the offset when the laptop sits on the left, so it clears the text */
+    .summary[data-alternate='true'] & {
+      left: -14%;
+
+      @media (--mediaTablet) {
+        left: 0;
+      }
+    }
+
     @media (--mediaDesktop) {
       --width: 180%;
     }
@@ -163,6 +172,20 @@
     right: -36%;
     bottom: 24%;
     transform: translateY(50%);
+
+    .summary[data-alternate='true'] & {
+      right: auto;
+      left: -36%;
+
+      @media (--mediaTablet) {
+        left: auto;
+        right: -10%;
+      }
+
+      @media (--mediaMobile) {
+        right: 0;
+      }
+    }
 
     @media (--mediaTablet) {
       width: 80%;

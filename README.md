@@ -1,7 +1,7 @@
 <p align="center">
   <img src="/public/favicon.svg" width="50" alt="Logo" />
 </p>
-<h1 align="center">Eid Mohamoud — Portfolio</h1>
+<h1 align="center">Cabdifataax Maxamuud — Portfolio</h1>
 
 Personal portfolio showcasing AI/ML engineering projects and technical experience. Built with [Remix](https://remix.run/), [Three.js](https://threejs.org/), and [Framer Motion](https://www.framer.com/motion/). Deployed on [Cloudflare Pages](https://pages.cloudflare.com/).
 

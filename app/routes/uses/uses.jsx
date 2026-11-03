@@ -60,7 +60,9 @@ export const Uses = () => {
                     <Link href="https://www.tensorflow.org/">TensorFlow</Link> and <Link href="https://scikit-learn.org/">Scikit-learn</Link> for
                     model training, evaluation, and classical ML workflows. I also use
                     Hugging Face <Link href="https://huggingface.co/docs/transformers">Transformers</Link> for
-                    NLP tasks like zero-shot classification and sentiment analysis.
+                    NLP tasks like zero-shot classification and sentiment analysis, and
+                    for evaluating transformer models like BERT and RoBERTa for bias,
+                    fairness, and reliability.
                   </ListItem>
                   <ListItem>
                     <Link href="https://pandas.pydata.org/">Pandas</Link> and <Link href="https://numpy.org/">NumPy</Link> for
@@ -109,6 +111,38 @@ export const Uses = () => {
         </ProjectSection>
         <ProjectSection padding="none" className={styles.section}>
           <ProjectSectionContent>
+            <ProjectTextRow width="m">
+              <ProjectSectionHeading>Data, Cloud &amp; Infrastructure</ProjectSectionHeading>
+              <ProjectSectionText as="div">
+                <List>
+                  <ListItem>
+                    Python and SQL for ETL/ELT pipelines and data integration, with
+                    validation, data quality checks, and PII detection built into every
+                    stage. REST APIs and Google Workspace APIs (Gmail, Calendar, Drive)
+                    connect those pipelines to the systems they serve.
+                  </ListItem>
+                  <ListItem>
+                    <Link href="https://cloud.google.com/bigquery">BigQuery</Link> and <Link href="https://cloud.google.com/bigquery/docs/bqml-introduction">BigQuery ML</Link> on <Link href="https://cloud.google.com/">Google Cloud Platform</Link> for
+                    data warehousing, analytics, and training models directly in SQL,
+                    alongside <Link href="https://www.mongodb.com/">MongoDB</Link>, Firebase,
+                    and relational databases.
+                  </ListItem>
+                  <ListItem>
+                    <Link href="https://www.docker.com/">Docker</Link>, Linux/Unix, and CI/CD
+                    pipelines with automated testing to keep builds reproducible and
+                    deployments reliable.
+                  </ListItem>
+                  <ListItem>
+                    <Link href="https://www.microsoft.com/power-platform/products/power-bi">Power BI</Link>, <Link href="https://www.tableau.com/">Tableau</Link>, and
+                    Excel for dashboards, data visualization, and reporting.
+                  </ListItem>
+                </List>
+              </ProjectSectionText>
+            </ProjectTextRow>
+          </ProjectSectionContent>
+        </ProjectSection>
+        <ProjectSection padding="none" className={styles.section}>
+          <ProjectSectionContent>
             <ProjectTextRow stretch width="m">
               <ProjectSectionHeading>Stack at a Glance</ProjectSectionHeading>
               <Table>
@@ -119,11 +153,11 @@ export const Uses = () => {
                   </TableRow>
                   <TableRow>
                     <TableHeadCell>AI / ML</TableHeadCell>
-                    <TableCell>LangGraph, LangChain, OpenAI API, TensorFlow, Scikit-learn, Transformers</TableCell>
+                    <TableCell>LangGraph, LangChain, OpenAI API, RAG, Embeddings, TensorFlow, Scikit-learn, Transformers (BERT, RoBERTa)</TableCell>
                   </TableRow>
                   <TableRow>
                     <TableHeadCell>Vector / Data</TableHeadCell>
-                    <TableCell>Pinecone, Pandas, NumPy, BigQuery ML</TableCell>
+                    <TableCell>Pinecone, Pandas, NumPy, ETL/ELT, Data Validation, PII Detection</TableCell>
                   </TableRow>
                   <TableRow>
                     <TableHeadCell>Frontend</TableHeadCell>
@@ -131,23 +165,31 @@ export const Uses = () => {
                   </TableRow>
                   <TableRow>
                     <TableHeadCell>Backend</TableHeadCell>
-                    <TableCell>FastAPI, SpringBoot, Node.js</TableCell>
+                    <TableCell>FastAPI, SpringBoot, Node.js, REST APIs, Google Workspace APIs</TableCell>
                   </TableRow>
                   <TableRow>
                     <TableHeadCell>Databases</TableHeadCell>
-                    <TableCell>Supabase, Firebase, MongoDB</TableCell>
+                    <TableCell>BigQuery, Supabase, Firebase, MongoDB, Relational Databases</TableCell>
                   </TableRow>
                   <TableRow>
                     <TableHeadCell>Cloud / Deploy</TableHeadCell>
-                    <TableCell>Vercel, Cloudflare, Google Cloud</TableCell>
+                    <TableCell>Google Cloud (GCP), BigQuery ML, Docker, CI/CD, Vercel, Cloudflare</TableCell>
+                  </TableRow>
+                  <TableRow>
+                    <TableHeadCell>BI / Visualization</TableHeadCell>
+                    <TableCell>Power BI, Tableau, Excel</TableCell>
                   </TableRow>
                   <TableRow>
                     <TableHeadCell>Tools</TableHeadCell>
-                    <TableCell>Cursor, VS Code, PyCharm, Jupyter, Google Colab, Git, Figma</TableCell>
+                    <TableCell>Cursor, VS Code, PyCharm, Jupyter, Google Colab, Git, Linux/Unix, Figma</TableCell>
                   </TableRow>
                   <TableRow>
                     <TableHeadCell>Certification</TableHeadCell>
-                    <TableCell>eCornell Machine Learning Foundations (August 2025)</TableCell>
+                    <TableCell>
+                      <Link href="/ML%20Certificate.pdf" target="_blank" rel="noopener noreferrer">
+                        eCornell Machine Learning Foundations (August 2025)
+                      </Link>
+                    </TableCell>
                   </TableRow>
                 </TableBody>
               </Table>

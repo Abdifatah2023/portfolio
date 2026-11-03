@@ -21,16 +21,17 @@ const ProfileText = ({ visible, titleId }) => (
       <DecoderText text="Hi there" start={visible} delay={500} />
     </Heading>
     <Text className={styles.description} data-visible={visible} size="l" as="p">
-      Eid Mohamoud &mdash; Computer Information Technology student at <Link href="https://www.tcu.edu">Texas Christian University</Link>,
-      specializing in AI engineering, machine learning, and intelligent systems. Combining
-      hands-on IT support at TCU with AI/ML project work including RAG pipelines, agentic
-      workflows, NLP systems, and full-stack applications. Machine Learning Fellow at Meta
-      and HeadStarter AI engineering alumnus. Check out the tools and stack on my <Link href="/uses">uses page</Link>.
+      Cabdifataax Maxamuud &mdash; Backend AI Engineer at FlyRank and Computer Information
+      Technology student at <Link href="https://www.tcu.edu">Texas Christian University</Link> (expected
+      May 2027). I build Python backends, data pipelines, and AI agents with a focus on
+      reliability, evaluation, and data quality. Previously a Forward Deployed Engineer at
+      CompuMatrice and a Machine Learning Fellow at Meta. I&apos;m also an alumnus of the
+      HeadStarter AI engineering program. Check out the tools and stack on my <Link href="/uses">uses page</Link>.
     </Text>
     <Text className={styles.description} data-visible={visible} size="l" as="p">
-      Currently Treasurer of the TCU CS Society and AI/ML Fellow with Break Through Tech
-      AI. Always open to new projects, research collaborations, and engineering
-      opportunities &mdash; feel free to drop me a line.
+      I also served as Treasurer of the TCU Computer Science Society and as an AI/ML Fellow
+      with Break Through Tech AI from 2025 to 2026. Always open to new projects, research
+      collaborations, and engineering opportunities &mdash; feel free to drop me a line.
     </Text>
   </Fragment>
 );
@@ -97,7 +98,7 @@ export const Profile = ({ id, visible, sectionRef }) => {
                   width={960}
                   height={1280}
                   sizes={`(max-width: ${media.mobile}px) 100vw, 480px`}
-                  alt="Eid Mohamoud — AI Engineer and CIT student at Texas Christian University"
+                  alt="Cabdifataax Maxamuud — Backend AI Engineer and CIT student at Texas Christian University"
                 />
                 <svg className={styles.svg} data-visible={visible} viewBox="0 0 136 766">
                   <use href={`${katakana}#katakana-profile`} />

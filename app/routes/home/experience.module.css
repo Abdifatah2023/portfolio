@@ -1,0 +1,127 @@
+.experience {
+  width: 100vw;
+  margin-top: 60px;
+  padding-top: 60px;
+  padding-bottom: 40px;
+  display: flex;
+  justify-content: center;
+
+  @media (--mediaTablet) {
+    padding-right: 80px;
+    padding-left: 160px;
+    margin-top: 40px;
+  }
+
+  @media (--mediaMobile) {
+    margin-top: 0;
+    padding-top: var(--space4XL);
+    overflow-x: hidden;
+  }
+
+  @media (--mediaMobile), (--mediaMobileLS) {
+    padding-right: var(--spaceOuter);
+    padding-left: var(--spaceOuter);
+  }
+}
+
+.content {
+  max-width: var(--maxWidthL);
+  width: 100%;
+
+  @media (--mediaTablet) {
+    max-width: 600px;
+  }
+}
+
+.tag {
+  margin-bottom: var(--spaceXL);
+  display: grid;
+  grid-template-columns: var(--space4XL) 1fr;
+  gap: 12px;
+  align-items: center;
+}
+
+.tagText {
+  font-size: var(--fontSizeBodyS);
+  font-weight: var(--fontWeightMedium);
+  color: var(--primary);
+  opacity: 0;
+  transition-property: opacity;
+  transition-timing-function: var(--bezierFastoutSlowin);
+  transition-duration: var(--durationM);
+  transition-delay: 0.9s;
+
+  @media (--mediaUseMotion) {
+    transition-property: opacity, transform;
+    transform: translate3d(calc(var(--spaceM) * -1), 0, 0);
+  }
+
+  &[data-visible='true'] {
+    transform: none;
+    opacity: 1;
+  }
+}
+
+.title,
+.subheading {
+  margin-bottom: var(--spaceXL);
+  opacity: 0;
+  transition: opacity var(--durationXL) ease var(--durationM);
+
+  &[data-visible='true'] {
+    opacity: 1;
+  }
+}
+
+.subheading {
+  margin-top: var(--space2XL);
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--space2XL) var(--space3XL);
+  opacity: 0;
+  transition: opacity var(--durationXL) ease var(--durationL);
+
+  @media (--mediaTablet) {
+    grid-template-columns: 100%;
+  }
+
+  &[data-visible='true'] {
+    opacity: 1;
+  }
+}
+
+.entry {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spaceS);
+  padding-left: var(--spaceL);
+  border-left: 2px solid color-mix(in lab, var(--primary) 60%, transparent);
+}
+
+.entryHeader {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spaceXS);
+}
+
+.dates {
+  white-space: nowrap;
+}
+
+.subtitle {
+  margin-bottom: var(--spaceXS);
+}
+
+.highlights {
+  margin: 0;
+  padding-left: 1.1em;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spaceS);
+}
